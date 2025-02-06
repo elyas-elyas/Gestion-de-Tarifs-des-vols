@@ -1,0 +1,67 @@
+test test_a_OD  
+=== Test OD : Affichage de l'itinéraire ===
+Itinéraire : AMS -> BER
+Aucun tarif disponible.
+  
+test test_b_Tarif  
+=== Test Tarif : Affichage des informations ===
+Classe : E | Net : 500 | Taxe : 50
+  
+test test_c_OD_Tarif  
+=== Test OD : Affichage des tarifs ajoutés ===
+Itinéraire : AMS -> BER
+Classe : E | Net : 500 | Taxe : 50
+Classe : B | Net : 1200 | Taxe : 100
+Classe : F | Net : 2500 | Taxe : 200
+  
+test test_d_OD_AjoutTarif  
+=== Test OD : Affichage des tarifs après application des règles ===
+Itinéraire : AMS -> BER
+Classe : E | Net : 450 | Taxe : 35
+Classe : B | Net : 1200 | Taxe : 100
+Classe : F | Net : 2500 | Taxe : 200
+  
+test test_e_OD_TarifMin  
+=== Test OD : Affichage du Net Min ===
+Itinéraire : AMS -> BER
+Classe : E | Net : 450 | Taxe : 40
+Classe : B | Net : 300 | Taxe : 90
+Classe : F | Net : 2500 | Taxe : 200
+=== Tarif avec Net minimum ===
+Classe : B | Net : 300 | Taxe : 90
+  
+test test_f_OD_TarifMax  
+=== Test OD : Affichage du Net Max ===
+Itinéraire : AMS -> BER
+Classe : E | Net : 450 | Taxe : 40
+Classe : B | Net : 300 | Taxe : 90
+Classe : F | Net : 2500 | Taxe : 200
+=== Tarif avec Net maximum ===
+Classe : F | Net : 2500 | Taxe : 200
+  
+test test_g_OD_MoyenneNet  
+=== Test OD : Affichage de la moyenne des valeurs Net ===
+Itinéraire : AMS -> BER
+Classe : E | Net : 450 | Taxe : 40
+Classe : B | Net : 300 | Taxe : 90
+Classe : F | Net : 2500 | Taxe : 200
+=== Moyenne des valeurs Net ===
+Moyenne : 1083.33
+  
+test test_h_FlightNbr  
+=== Test FlightNbr : Affichage des informations du vol ===
+Numero de vol : KL1771
+Itinéraire : AMS -> BER
+Classe : E | Net : 500 | Taxe : 50
+Classe : B | Net : 1200 | Taxe : 100
+  
+test test_i_GestionnaireCSV_lireCSV  
+=== Test GestionnaireCSV : Lecture du fichier CSV ===
+Les vols ont été chargés avec succès.
+=== Libération de la mémoire ===
+  
+test test_j_GestionnaireCSV_exportCSV  
+=== Test GestionnaireCSV : Export dans un fichier CSV ===
+Rapport genere : ./tests/results/test_export.csv
+Test réussi : le fichier a été généré avec succès !
+  
